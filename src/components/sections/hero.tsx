@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="container grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
           <h1 className="font-headline text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-primary">
-            Alex Doe
+            Puneet Sethi
           </h1>
           <p className="mt-2 text-xl md:text-2xl text-muted-foreground font-medium">
             Technical Lead & Full Stack Developer
@@ -31,8 +31,8 @@ const Hero = () => {
         </div>
         <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 mx-auto">
           <Image
-            src="https://picsum.photos/400/400"
-            alt="Alex Doe"
+            src="https://media.licdn.com/dms/image/v2/D5603AQHhjryRFRXG-Q/profile-displayphoto-crop_800_800/B56ZkN3pcxHcAI-/0/1756874317269?e=1759968000&v=beta&t=IVopOiSwvfM9ppaZr6YPxOtVcBwlyEXbbQuvszvzVBw"
+            alt="Puneet Sethi"
             width={400}
             height={400}
             data-ai-hint="profile picture"
