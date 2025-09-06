@@ -7,31 +7,31 @@ import { Github, ExternalLink } from 'lucide-react';
 
 const projects = [
   {
-    title: "E-Commerce Platform",
-    description: "A full-featured e-commerce platform with a custom CMS, payment gateway integration, and a recommendation engine.",
+    title: "Staffing and Recruitment Platform",
+    description: "AI-powered platform delivers exceptional business outcomes by accelerating time to hire, optimizing contingent workforce spend, and ensuring access to top talent",
     image: "https://picsum.photos/600/400?random=1",
-    tech: ["Next.js", "Node.js", "PostgreSQL", "Stripe", "Tailwind CSS"],
+    tech: ["PHP", "Node.js", "SQL", "Payment Gateways"],
     github: "https://github.com",
-    live: "https://github.com",
-    aiHint: "online store"
+    live: "https://magnitglobal.com/",
+    aiHint: "contingent workforce management"
   },
   {
-    title: "Project Management Tool",
-    description: "A collaborative project management tool with real-time updates, task boards, and team communication features.",
+    title: "Fitness & Healthcare",
+    description: "Gleantap is a patient engagement platform with built-in CRM to centralize & automate communication with patients throughout lifecycle, so you turn more leads to patients & patients to repeat customers.",
     image: "https://picsum.photos/600/400?random=2",
-    tech: ["React", "Firebase", "Zustand", "Framer Motion"],
+    tech: ["React", "PHP", "Firebase", "SQL"],
     github: "https://github.com",
-    live: "https://github.com",
+    live: "https://gleantap.com/",
     aiHint: "dashboard app"
   },
   {
-    title: "Portfolio Website Builder",
-    description: "An AI-powered portfolio builder that helps developers create stunning portfolios in minutes. Features dynamic theming and content generation.",
+    title: "Finance & Invoicing",
+    description: "A complete business management solution designed to streamline operations with GST-ready invoicing, inventory and warehouse management, accounting, and online payments. It empowers businesses with advanced reporting, recurring invoicing, purchase order management, and multi-user role support, while also offering one-click advertisements, barcode compatibility, and integrated webcam features for seamless sales, marketing, and customer engagement.",
     image: "https://picsum.photos/600/400?random=3",
-    tech: ["Next.js", "Genkit AI", "Vercel", "Shadcn UI"],
+    tech: ["Node.js", "Angular", "SQL", "PHP", "AWS"],
     github: "https://github.com",
-    live: "https://github.com",
-    aiHint: "website builder"
+    live: "https://www.ginvoicing.com/",
+    aiHint: "complete invoicing solution"
   },
 ];
 

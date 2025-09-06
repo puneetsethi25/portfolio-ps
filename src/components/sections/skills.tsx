@@ -2,14 +2,14 @@ import { Badge } from '@/components/ui/badge';
 import { Code, Database, Server, Cloud, Palette, GitBranch } from 'lucide-react';
 
 const skills = [
-  { name: 'React & Next.js', icon: <Code className="h-4 w-4 mr-1" /> },
   { name: 'Node.js', icon: <Server className="h-4 w-4 mr-1" /> },
+  { name: 'React & Next.js', icon: <Code className="h-4 w-4 mr-1" /> },
   { name: 'TypeScript', icon: <Code className="h-4 w-4 mr-1" /> },
   { name: 'PostgreSQL', icon: <Database className="h-4 w-4 mr-1" /> },
   { name: 'Docker', icon: <Cloud className="h-4 w-4 mr-1" /> },
-  { name: 'Tailwind CSS', icon: <Palette className="h-4 w-4 mr-1" /> },
+  { name: 'RESTful API', icon: <Palette className="h-4 w-4 mr-1" /> },
   { name: 'Git & GitHub', icon: <GitBranch className="h-4 w-4 mr-1" /> },
-  { name: 'AWS & GCP', icon: <Cloud className="h-4 w-4 mr-1" /> },
+  { name: 'AWS', icon: <Cloud className="h-4 w-4 mr-1" /> },
 ];
 
 const Skills = () => {

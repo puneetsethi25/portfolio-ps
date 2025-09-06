@@ -15,7 +15,7 @@ const Hero = () => {
             Technical Lead & Full Stack Developer
           </p>
           <p className="mt-6 max-w-xl text-lg text-foreground/80">
-            A passionate and creative developer with over a decade of experience in building modern, scalable, and user-friendly web applications. I turn complex problems into elegant solutions.
+          As a Tech Lead and seasoned Full-Stack Developer, I offer a rich tapestry of experience spanning over 12 years. My journey in the tech world has been marked by a dedication to excellence and innovation. Holding the esteemed AWS Certified Developer Associate certification, I've been a driving force behind the success of global applications. My passion for technology, combined with a knack for leadership, has consistently delivered results and fostered an environment of continuous learning and growth.
           </p>
           <div className="mt-8 flex flex-wrap justify-center md:justify-start gap-4">
             <Button size="lg" asChild>
