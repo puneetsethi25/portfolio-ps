@@ -27,7 +27,7 @@ const projects = [
   {
     title: "Finance & Invoicing",
     description: "A complete business management solution designed to streamline operations with GST-ready invoicing, inventory and warehouse management, accounting, and online payments.",
-    image: "https://www.ginvoicing.com/images/dashboard-banner.png",
+    image: "https://m.media-amazon.com/images/I/717UUb+F1JL.png",
     tech: ["Node.js", "Angular", "SQL", "PHP", "AWS"],
     github: "https://github.com",
     live: "https://www.ginvoicing.com/",
