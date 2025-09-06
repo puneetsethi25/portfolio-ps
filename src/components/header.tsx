@@ -6,6 +6,8 @@ import { Button } from './ui/button';
 const Header = () => {
   const navLinks = [
     { href: '#experience', label: 'Experience' },
+    { href: '#certifications', label: 'Certifications' },
+    { href: '#achievements', label: 'Achievements' },
     { href: '#projects', label: 'Projects' },
     { href: '#testimonials', label: 'Testimonials' },
     { href: '#blog', label: 'Blog' },
