@@ -8,9 +8,16 @@ const certifications = [
   {
     name: "AWS Certified Developer - Associate",
     issuer: "Amazon Web Services",
-    date: "Issued Jun 2024",
-    credentialId: "D1L48112M1411C59",
-    credentialUrl: "#"
+    date: "Issued October 2023",
+    credentialId: "KDP3HJ5C02F11R5E",
+    credentialUrl: "https://www.credly.com/badges/2f2be2de-bbaf-49ec-bfba-c6d067f47bd2/linked_in_profile"
+  },
+  {
+    name: "Programming Using JavaScript",
+    issuer: "HackerRank",
+    date: "Issued Nov 2021",
+    credentialId: "46373fdfce96",
+    credentialUrl: "https://www.hackerrank.com/certificates/46373fdfce96"
   },
   // You can add more certifications here
 ];
