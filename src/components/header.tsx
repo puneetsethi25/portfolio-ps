@@ -19,7 +19,7 @@ const Header = () => {
       <div className="container mx-auto py-2 flex flex-col md:flex-row items-center justify-between">
         <Link href="/" className="mr-6 flex items-center space-x-2">
           <Code2 className="h-6 w-6 text-primary" />
-          <span className="font-bold inline-block">Devfolio Pro</span>
+          <span className="font-bold inline-block">Portfolio</span>
         </Link>
         <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
           {navLinks.map((link) => (

@@ -8,7 +8,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
-import { Send, Loader2 } from "lucide-react";
+import { Send, Loader2, Mail, Phone, MapPin } from "lucide-react";
 import { submitContactForm } from '@/lib/actions';
 
 const initialState = {
@@ -56,34 +56,67 @@ const Contact = () => {
 
   return (
     <section id="contact" className="py-20 md:py-24">
-      <div className="container max-w-2xl mx-auto">
-        <Card>
-          <CardHeader className="text-center">
-            <CardTitle className="text-3xl md:text-4xl font-bold">
+      <div className="container">
+        <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold">
               Get In <span className="text-primary">Touch</span>
-            </CardTitle>
-            <CardDescription>
+            </h2>
+            <p className="text-lg text-muted-foreground mt-2">
               Have a project in mind or just want to say hello? Drop me a line.
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
-            <form action={formAction} className="space-y-4">
-              <div>
-                <Input name="name" placeholder="Your Name" required />
-                {state.errors?.name && <p className="text-sm text-destructive mt-1">{state.errors.name[0]}</p>}
-              </div>
-              <div>
-                <Input name="email" type="email" placeholder="Your Email" required />
-                {state.errors?.email && <p className="text-sm text-destructive mt-1">{state.errors.email[0]}</p>}
-              </div>
-              <div>
-                <Textarea name="message" placeholder="Your Message" rows={5} required />
-                 {state.errors?.message && <p className="text-sm text-destructive mt-1">{state.errors.message[0]}</p>}
-              </div>
-              <SubmitButton />
-            </form>
-          </CardContent>
-        </Card>
+            </p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+          <Card>
+            <CardHeader>
+              <CardTitle>Send me a message</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <form action={formAction} className="space-y-4">
+                <div>
+                  <Input name="name" placeholder="Your Name" required />
+                  {state.errors?.name && <p className="text-sm text-destructive mt-1">{state.errors.name[0]}</p>}
+                </div>
+                <div>
+                  <Input name="email" type="email" placeholder="Your Email" required />
+                  {state.errors?.email && <p className="text-sm text-destructive mt-1">{state.errors.email[0]}</p>}
+                </div>
+                <div>
+                  <Textarea name="message" placeholder="Your Message" rows={5} required />
+                  {state.errors?.message && <p className="text-sm text-destructive mt-1">{state.errors.message[0]}</p>}
+                </div>
+                <SubmitButton />
+              </form>
+            </CardContent>
+          </Card>
+          <div className="space-y-6">
+            <Card>
+              <CardHeader>
+                <CardTitle>Contact Information</CardTitle>
+                <CardDescription>
+                  Here is my contact information if you'd like to reach out directly.
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="flex items-center gap-4">
+                  <Mail className="h-6 w-6 text-primary" />
+                  <a href="mailto:puneetmsethi@gmail.com" className="hover:text-primary transition-colors">
+                    puneetmsethi@gmail.com
+                  </a>
+                </div>
+                <div className="flex items-center gap-4">
+                  <Phone className="h-6 w-6 text-primary" />
+                  <a href="tel:+15875784438" className="hover:text-primary transition-colors">
+                    +91 (842) 722-6611
+                  </a>
+                </div>
+                <div className="flex items-center gap-4">
+                  <MapPin className="h-6 w-6 text-primary" />
+                  <span>Ludhiana, PB, India</span>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
       </div>
     </section>
   );
