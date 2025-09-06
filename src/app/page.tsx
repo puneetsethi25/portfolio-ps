@@ -13,19 +13,21 @@ import Achievements from '@/components/sections/achievements';
 
 export default function Home() {
   return (
-    <div className="container mx-auto text-center flex flex-col min-h-screen justify-center items-center">
+    <div className="flex flex-col min-h-screen">
       <Header />
       <main className="flex-grow">
-        <Hero />
-        <Skills />
-        <Experience />
-        <Certifications />
-        <Achievements />
-        <Projects />
-        <Testimonials />
-        <Blog />
-        <SkillSuggester />
-        <Contact />
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"> 
+          <Hero />
+          <Skills />
+          <Experience />
+          <Certifications />
+          <Achievements />
+          <Projects />
+          <Testimonials />
+          <Blog />
+          <SkillSuggester />
+          <Contact />
+        </div>
       </main>
       <Footer />
     </div>

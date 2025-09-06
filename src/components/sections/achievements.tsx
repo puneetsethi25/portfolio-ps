@@ -3,16 +3,22 @@ import { Trophy } from "lucide-react";
 
 const achievements = [
   {
-    title: "Employee of the Month",
+    title: "Employee of the Quarter",
     organization: "Prism Cloud Consulting Inc.",
-    date: "March 2024",
+    date: "July 2023",
     description: "Recognized for exceptional performance and contributions to the team's success."
   },
   {
-    title: "Innovation Award",
-    organization: "Kano Apps",
-    date: "July 2022",
-    description: "Awarded for developing a novel feature that significantly improved user engagement."
+    title: "Innovation & Product Impact",
+    organization: "Ginvoicing Solutions Pvt. Ltd.",
+    date: "July 2019",
+    description: "Awarded for developing a novel feature that significantly improved user engagement and Migrating the platform to a microservices architecture."
+  },
+    {
+    title: "Guest Speaker — Serverless Computing",
+    organization: "PCTE Group of Institutes",
+    date: "Oct 2024",
+    description: "Invited as a guest speaker to deliver a technical lecture on Serverless Computing and AWS Lambda at PCTE Group of Institutes, sharing real-world insights on building scalable, event-driven applications."
   },
 ];
 

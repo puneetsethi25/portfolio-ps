@@ -10,23 +10,29 @@ import Image from 'next/image';
 
 const testimonials = [
   {
-    quote: "Alex is a phenomenal developer and leader. Their ability to tackle complex architectural challenges and deliver high-quality code is unmatched. A true asset to any team.",
-    author: "Jane Doe",
-    title: "CEO, Innovate Inc.",
+    quote: "Puneet worked on many aspects of our app, and was a pleasure to work with. Will definately rehire as we need more work done",
+    author: "Mark Vernon",
+    title: "CEO, Tagcash Ltd.",
     avatar: "https://picsum.photos/100/100?random=4"
   },
   {
-    quote: "Working with Alex was a pleasure. Their expertise in full-stack development was instrumental in launching our product on time and on budget. Highly recommended!",
-    author: "John Smith",
-    title: "Product Manager, Tech Solutions Co.",
+    quote: "Loved working with Puneet for my Squarespace sales page. He did great work, helped me with implementation, great communication and delivered as promised. Will definitely work with Puneet again.",
+    author: "Alli Elmunzer",
+    title: "Founder, Influencer Legal",
     avatar: "https://picsum.photos/100/100?random=5"
   },
   {
-    quote: "Their technical skills are top-notch, but what truly sets Alex apart is their communication and collaborative spirit. They elevate the entire team.",
-    author: "Emily White",
-    title: "Lead Designer, Digital Creations",
+    quote: "Puneet is an outstanding Lead Development Engineer with exceptional technical expertise and leadership skills. He successfully led cross-functional teams, architected scalable solutions, and delivered complex projects ahead of schedule. A true asset to any organization.",
+    author: "Tarun Jangra",
+    title: "CEO, Ginvoicing Solutions Pvt. Ltd.",
     avatar: "https://picsum.photos/100/100?random=6"
   },
+  {
+    quote: "Well I really liked working with Puneet. He is very smart and know exactly what he is doing. He takes initiatives and he is able to challenge you when your requirements are not clear enough or going to a wrong direction.",
+    author: "Yves Yota Tchoffo",
+    title: "Founder, Lepoids Cliche",
+    avatar: "https://picsum.photos/100/100?random=6"
+  },  
 ];
 
 const Testimonials = () => {

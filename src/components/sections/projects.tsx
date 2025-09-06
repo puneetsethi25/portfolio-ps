@@ -7,22 +7,13 @@ import { Github, ExternalLink } from 'lucide-react';
 
 const projects = [
   {
-    title: "Staffing and Recruitment Platform",
-    description: "AI-powered platform delivers exceptional business outcomes by accelerating time to hire, optimizing contingent workforce spend, and ensuring access to top talent",
-    image: "https://picsum.photos/600/400?random=1",
-    tech: ["PHP", "Node.js", "SQL", "Payment Gateways"],
+    title: "Home & Community Health Care",
+    description: "Integrated Care Solutions partners with hospitals to implement client and family-centered holistic care models for clients transitioning from hospital to home.",
+    image: "https://mma.prnewswire.com/media/1320729/Bayshore_HealthCare_Bayshore_HealthCare_Partners_with_Amazon_to.jpg?p=facebook",
+    tech: ["Node.js", "Flutter", "SQL", "MongoDB", "AWS"],
     github: "https://github.com",
-    live: "https://magnitglobal.com/",
-    aiHint: "contingent workforce management"
-  },
-  {
-    title: "Fitness & Healthcare",
-    description: "Gleantap is a patient engagement platform with built-in CRM to centralize & automate communication with patients throughout lifecycle, so you turn more leads to patients & patients to repeat customers.",
-    image: "https://picsum.photos/600/400?random=2",
-    tech: ["React", "PHP", "Firebase", "SQL"],
-    github: "https://github.com",
-    live: "https://gleantap.com/",
-    aiHint: "dashboard app"
+    live: "https://www.ginvoicing.com/",
+    aiHint: "complete invoicing solution"
   },
   {
     title: "Finance & Invoicing",
@@ -32,12 +23,39 @@ const projects = [
     github: "https://github.com",
     live: "https://www.ginvoicing.com/",
     aiHint: "complete invoicing solution"
+  },  
+  {
+    title: "Staffing and Recruitment Platform",
+    description: "AI-powered platform delivers exceptional business outcomes by accelerating time to hire, optimizing contingent workforce spend, and ensuring access to top talent",
+    image: "https://media.licdn.com/dms/image/v2/D560BAQGGQ4jk-IERUw/company-logo_200_200/company-logo_200_200/0/1663245212584/pro_unlimited_logo?e=1759968000&v=beta&t=kg6XObgf20o-28R-8A7B_Yzov71k8S_QDp6EHRZkYUg",
+    tech: ["PHP", "Node.js", "SQL", "Payment Gateways"],
+    github: "https://github.com",
+    live: "https://magnitglobal.com/",
+    aiHint: "contingent workforce management"
+  }, 
+  {
+    title: "Fitness & Healthcare",
+    description: "Gleantap is a patient engagement platform with built-in CRM to centralize & automate communication with patients throughout lifecycle, so you turn more leads to patients & patients to repeat customers.",
+    image: "https://media.licdn.com/dms/image/v2/D560BAQF8D_b-YZ449Q/company-logo_200_200/company-logo_200_200/0/1706051373451/gleantap_logo?e=1759968000&v=beta&t=YNIwxXftDml7HnfQp6ux9B6srcjwXJocVbcJV6B5a8s",
+    tech: ["React", "PHP", "Firebase", "SQL"],
+    github: "https://github.com",
+    live: "https://gleantap.com/",
+    aiHint: "dashboard app"
   },
+  {
+    title: "Finance & E-Wallet",
+    description: "ultimate platform for social media monetization, group collaboration, and streamlined efficiency. Using embedded crypto and fiat ewallets for micropayments",
+    image: "https://bitpinas.com/wp-content/uploads/2018/07/tag-cash-3-1.png",
+    tech: ["Node.js", "Socket.io", "Crypto", "SQL", "MongoDB", "Angular", "PHP"],
+    github: "https://github.com",
+    live: "https://www.ginvoicing.com/",
+    aiHint: "Fintech Integrated Membership Ecosystems"
+  },    
 ];
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-20 md:py-24 bg-secondary">
+    <section id="projects" className="p-3 py-20 md:py-8 bg-secondary">
       <div className="container">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
           Featured <span className="text-primary">Projects</span>
@@ -46,7 +64,16 @@ const Projects = () => {
           {projects.map((project, index) => (
             <Card key={index} className="flex flex-col overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
               <CardHeader className="p-0">
-                <Image src={project.image} alt={project.title} width={600} height={400} data-ai-hint={project.aiHint} className="object-cover" />
+                {/* <Image src={project.image} alt={project.title} width={600} height={400} data-ai-hint={project.aiHint} className="object-cover" /> */}
+                <div className="aspect-video relative">
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    data-ai-hint={project.aiHint}
+                    className="object-cover"
+                  />
+                </div>
               </CardHeader>
               <CardContent className="p-6 flex flex-col flex-grow">
                 <CardTitle className="mb-2">{project.title}</CardTitle>

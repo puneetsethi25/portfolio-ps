@@ -33,7 +33,7 @@ const blogPosts = [
 
 const Blog = () => {
   return (
-    <section id="blog" className="py-20 md:py-24 bg-secondary">
+    <section id="blog" className="py-20 p-3 md:py-8 bg-secondary">
       <div className="container">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
           From My <span className="text-primary">Blog</span>
