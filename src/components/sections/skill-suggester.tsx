@@ -1,6 +1,7 @@
 "use client";
 
-import { useFormState, useFormStatus } from 'react-dom';
+import { useActionState } from 'react';
+import { useFormStatus } from 'react-dom';
 import { getSkillSuggestions } from '@/lib/actions';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Textarea } from "@/components/ui/textarea";
@@ -35,7 +36,7 @@ function SubmitButton() {
 }
 
 const SkillSuggester = () => {
-  const [state, formAction] = useFormState(getSkillSuggestions, initialState);
+  const [state, formAction] = useActionState(getSkillSuggestions, initialState);
   const { toast } = useToast();
 
   useEffect(() => {
