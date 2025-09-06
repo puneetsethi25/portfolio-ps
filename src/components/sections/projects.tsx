@@ -26,8 +26,8 @@ const projects = [
   },
   {
     title: "Finance & Invoicing",
-    description: "A complete business management solution designed to streamline operations with GST-ready invoicing, inventory and warehouse management, accounting, and online payments. It empowers businesses with advanced reporting, recurring invoicing, purchase order management, and multi-user role support, while also offering one-click advertisements, barcode compatibility, and integrated webcam features for seamless sales, marketing, and customer engagement.",
-    image: "https://picsum.photos/600/400?random=3",
+    description: "A complete business management solution designed to streamline operations with GST-ready invoicing, inventory and warehouse management, accounting, and online payments.",
+    image: "https://www.ginvoicing.com/images/dashboard-banner.png",
     tech: ["Node.js", "Angular", "SQL", "PHP", "AWS"],
     github: "https://github.com",
     live: "https://www.ginvoicing.com/",
