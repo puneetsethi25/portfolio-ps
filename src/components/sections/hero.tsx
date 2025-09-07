@@ -3,6 +3,11 @@ import { Button } from '@/components/ui/button';
 import { ArrowDown } from 'lucide-react';
 import Link from 'next/link';
 
+function getYearDifference(startYear = 2011) {
+    const currentYear = new Date().getFullYear();
+    return currentYear - startYear;
+}
+
 const Hero = () => {
   return (
     <section id="home" className="py-20 md:py-32">
@@ -15,7 +20,7 @@ const Hero = () => {
             Technical Lead & Full Stack Developer
           </p>
           <p className="mt-6 max-w-xl text-lg text-foreground/80">
-          As a Tech Lead and seasoned Full-Stack Developer, I offer a rich tapestry of experience spanning over 12 years. My journey in the tech world has been marked by a dedication to excellence and innovation. Holding the esteemed AWS Certified Developer Associate certification, I've been a driving force behind the success of global applications. My passion for technology, combined with a knack for leadership, has consistently delivered results and fostered an environment of continuous learning and growth.
+          As a Tech Lead and seasoned Full-Stack Developer, I offer a rich tapestry of experience spanning over {getYearDifference()} years. My journey in the tech world has been marked by a dedication to excellence and innovation. Holding the esteemed AWS Certified Developer Associate certification, I've been a driving force behind the success of global applications. My passion for technology, combined with a knack for leadership, has consistently delivered results and fostered an environment of continuous learning and growth.
           </p>
           <div className="mt-8 flex flex-wrap justify-center md:justify-start gap-4">
             <Button size="lg" asChild>
