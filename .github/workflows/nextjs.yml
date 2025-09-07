@@ -2,7 +2,7 @@ name: Deploy Next.js to GitHub Pages
 
 on:
   push:
-    branches: [ main ]  # or your default branch
+    branches: [ main ]
 
 permissions:
   contents: read
@@ -23,9 +23,9 @@ jobs:
           node-version: 20
           cache: 'npm'
       - run: npm ci
-      - run: npm run static
+      - run: npm run build   # no next export
       - run: |
-          # prevent Jekyll from mangling files and add SPA fallback if desired
+          # Make sure GH Pages serves static files properly
           touch out/.nojekyll
           cp out/index.html out/404.html
       - uses: actions/upload-pages-artifact@v3
