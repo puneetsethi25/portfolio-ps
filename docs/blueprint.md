@@ -1,4 +1,4 @@
-# **App Name**: Devfolio Pro
+# **App Name**: Puneet Sethi
 
 ## Core Features:
 
