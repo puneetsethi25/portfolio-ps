@@ -2,7 +2,7 @@ import type { NextConfig } from 'next';
 
 // next.config.js
 const isProd = process.env.NODE_ENV === 'production';
-const repoName = '/portfolio-ps'; // <-- change this (for project pages)
+const repoName = 'https://puneetsethi25.github.io/portfolio-ps/'; // <-- change this (for project pages)
 
 const nextConfig: NextConfig = {
   /* config options here */
@@ -61,8 +61,8 @@ const nextConfig: NextConfig = {
   output: 'export',             // <-- key: produce /out
   trailingSlash: true,          // <-- creates folder/index.html so GH Pages finds routes
   // For user/org pages (username.github.io) leave these empty.
-  basePath: isProd ? `/${repoName}` : '/portfolio-ps',
-  assetPrefix: isProd ? `/${repoName}/` : '/portfolio-ps'
+  basePath: isProd ? `/${repoName}` : '',
+  assetPrefix: isProd ? `/${repoName}/` : ''
 };
 
 export default nextConfig;
