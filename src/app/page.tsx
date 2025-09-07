@@ -5,7 +5,7 @@ import Experience from '@/components/sections/experience';
 import Projects from '@/components/sections/projects';
 import Testimonials from '@/components/sections/testimonials';
 import Blog from '@/components/sections/blog';
-import SkillSuggester from '@/components/sections/skill-suggester';
+// import SkillSuggester from '@/components/sections/skill-suggester';
 import Contact from '@/components/sections/contact';
 import Footer from '@/components/footer';
 import Certifications from '@/components/sections/certifications';
@@ -25,7 +25,7 @@ export default function Home() {
           <Projects />
           <Testimonials />
           <Blog />
-          <SkillSuggester />
+          {/* <SkillSuggester /> */}
           <Contact />
         </div>
       </main>

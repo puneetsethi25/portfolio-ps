@@ -1,6 +1,6 @@
 "use client";
 
-import { useActionState } from 'react';
+import { useActionState, useState } from 'react';
 import { useFormStatus } from 'react-dom';
 import { useEffect } from 'react';
 import { useToast } from '@/hooks/use-toast';
@@ -9,11 +9,11 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { Send, Loader2, Mail, Phone, MapPin } from "lucide-react";
-import { submitContactForm } from '@/lib/actions';
+// import { submitContactForm } from '@/lib/actions';
 
 const initialState = {
   message: '',
-  errors: {},
+  errors: {name: [], email: [], message: []},
   success: false,
 };
 
@@ -36,7 +36,7 @@ function SubmitButton() {
 }
 
 const Contact = () => {
-  const [state, formAction] = useActionState(submitContactForm, initialState);
+  const [state, setState] = useState(initialState);
   const { toast } = useToast();
 
   useEffect(() => {
@@ -71,7 +71,7 @@ const Contact = () => {
               <CardTitle>Send me a message</CardTitle>
             </CardHeader>
             <CardContent>
-              <form action={formAction} className="space-y-4">
+              <form action="#" className="space-y-4">
                 <div>
                   <Input name="name" placeholder="Your Name" required />
                   {state.errors?.name && <p className="text-sm text-destructive mt-1">{state.errors.name[0]}</p>}
