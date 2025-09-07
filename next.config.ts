@@ -2,7 +2,7 @@ import type { NextConfig } from 'next';
 
 // next.config.js
 const isProd = process.env.NODE_ENV === 'production';
-const repoName = 'portfolio-ps'; 
+const repoName = ''; 
 
 const nextConfig: NextConfig = {
   /* config options here */
